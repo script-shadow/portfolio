@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    animation: fadeDown 1.5s ease;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* Sections */
+section {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    animation: fadeUp 1.5s ease;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Skills */
+.skill-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-box span {
+    background: #00c6ff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.skill-box span:hover {
+    background: #0072ff;
+    transform: scale(1.1);
+}
+
+/* Buttons */
+.buttons {
+    text-align: center;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background: #fff;
+    color: #0072ff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.buttons a:hover {
+    background: #0072ff;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Animations */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .skill-box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
